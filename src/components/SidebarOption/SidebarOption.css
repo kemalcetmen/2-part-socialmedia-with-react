@@ -1,0 +1,27 @@
+@media only screen and (max-width: 800px) {
+  .sidebarOption > h2 {
+    display:none;
+  }
+  .icon {
+    margin-left: 15px;
+  }
+}
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .sidebarOption:hover {
+    opacity: 0.5;
+    border-radius:20px;
+  }
+  .icon {
+    padding: 5px;
+  }
+  .sidebarOption > h2 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .sidebarOptionactive {
+    color: var(--purple-buttons)
+  }

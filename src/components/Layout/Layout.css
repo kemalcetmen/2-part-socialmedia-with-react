@@ -1,0 +1,30 @@
+@media only screen and (max-width: 800px) {
+  .layout {
+    grid-template-columns: auto auto auto;
+  }
+  .widgets{
+    display: none;  
+  }
+}
+.layout {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    width: calc(100vw - var(--scrollbarWidth));
+    margin-right: auto;
+  }
+.sidebar{
+}
+.main {
+    overflow-y: scroll;
+    z-index: 1000;
+}
+.main::-webkit-scrollbar {
+    display: none;
+  }
+
+.widgets{
+  z-index: 0;
+
+}
